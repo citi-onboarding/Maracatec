@@ -6,4 +6,3 @@ tmp/
 temp/
 yarn.lock
 package-lock.json
-.vscode
