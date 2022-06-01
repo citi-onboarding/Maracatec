@@ -1,19 +1,34 @@
 import express from 'express';
-import UserController from '@controllers/UserController'
+
+import BannerController from '@controllers/BannerController';
+import ImagesController from '@controllers/ImagesController';
+import TimerController from '@controllers/TimerController';
 import CarouselController from '@controllers/CarouselController'
 
 const routes = express.Router();
-const userController = new UserController();
+const bannerController = new BannerController();
+const timerController = new TimerController();
+const imagesController = new ImagesController();
 const carouselController = new CarouselController();
+ 
+routes.post('/images', imagesController.create);
+routes.get('/images', imagesController.get);
+routes.delete('/images/:id', imagesController.delete);
+routes.put('/images/:id', imagesController.update);
 
-routes.post('/user', userController.create);
-routes.get('/user', userController.get);
-routes.delete('/user/:id', userController.delete);
-routes.put('/user/:id', userController.update);
+routes.post('/timer', timerController.create);
+routes.get('/timer', timerController.get);
+routes.delete('/timer/:id', timerController.delete);
+routes.put('/timer/:id', timerController.update);
 
 routes.post('/carousel', carouselController.create);
 routes.get('/carousel', carouselController.get);
 routes.delete('/carousel/:id', carouselController.delete);
 routes.put('/carousel/:id', carouselController.update);
+
+routes.post('/banner', bannerController.create);
+routes.get('/banner', bannerController.get);
+routes.delete('/banner/:id', bannerController.delete);
+routes.put('/banner/:id', bannerController.update);
 
 export default routes;
