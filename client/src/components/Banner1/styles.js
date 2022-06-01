@@ -3,11 +3,10 @@ import { MainFont } from '../../assets';
 import { FontDescription } from '../../assets';
 
 export const Banner1Component = styled.div`
-    margin-top: 320px;
-    margin-left: 8vw;
+    margin-top: 200px;
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
     .content{
