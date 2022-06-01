@@ -1,12 +1,15 @@
 import express from 'express';
+
 import BannerController from '@controllers/BannerController';
 import ImagesController from '@controllers/ImagesController';
 import TimerController from '@controllers/TimerController';
+import CarouselController from '@controllers/CarouselController'
 
 const routes = express.Router();
 const bannerController = new BannerController();
 const timerController = new TimerController();
 const imagesController = new ImagesController();
+const carouselController = new CarouselController();
  
 routes.post('/images', imagesController.create);
 routes.get('/images', imagesController.get);
@@ -17,6 +20,11 @@ routes.post('/timer', timerController.create);
 routes.get('/timer', timerController.get);
 routes.delete('/timer/:id', timerController.delete);
 routes.put('/timer/:id', timerController.update);
+
+routes.post('/carousel', carouselController.create);
+routes.get('/carousel', carouselController.get);
+routes.delete('/carousel/:id', carouselController.delete);
+routes.put('/carousel/:id', carouselController.update);
 
 routes.post('/banner', bannerController.create);
 routes.get('/banner', bannerController.get);
