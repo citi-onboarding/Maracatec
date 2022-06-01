@@ -3,10 +3,10 @@ import {ButtonComponent} from './styles';
 
 
 export const Button = (ButtonProps) => {
-    const { text, width } = ButtonProps;
+    const { text, width, reference } = ButtonProps;
     return (
         <ButtonComponent>
-            <button style = {{width: ButtonProps.width}}> {text} </button>
+            <button href={reference} style = {{width: ButtonProps.width}}> {text} </button>
         </ButtonComponent>
     );
 }
