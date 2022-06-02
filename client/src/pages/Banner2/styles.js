@@ -44,9 +44,10 @@ export const PainelRoxo = styled.div`
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    padding: 300px;
+    padding: 240px;
     transform: skew(0deg, 5deg) translateY(-50px);
     margin:-8px;
+    margin-top: 287px;
 `;
 
 export const Text1 = styled.h2`
