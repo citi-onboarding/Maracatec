@@ -8,8 +8,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BannerPrincipal />
-      <TimerCard/>
       <Banner2/>
+      <TimerCard/>  
       <CommentBox/>
     </ThemeProvider>
   );

@@ -3,11 +3,12 @@ import { MainFont } from '../../assets';
 import { SecondaryFont } from '../../assets';
 
 export const TimerComponent = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 100px;
 
     h1{
         width: 35vw;   
