@@ -21,10 +21,10 @@ export const TextBox = styled.div`
     justify-content: center;
     @font-face {
             font-family: 'NES2';
-            src: url('{MainFont}') format('truetype');
+            src: url(../../assets/NES2.ttf);
         }
     //margin-top: 320px;
-    //font-family: 'NES2';
+    font-family: 'NES2';
     //font-style: normal;
     //font-size: 20px;
     @media(max-width: 1200px){
