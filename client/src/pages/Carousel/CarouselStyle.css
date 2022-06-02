@@ -1,0 +1,32 @@
+.body { 
+    background-color: aqua;
+}
+
+
+.title p { 
+    font-family: 'NES2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #3B3B3B;
+}
+
+.buttonContainer { 
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

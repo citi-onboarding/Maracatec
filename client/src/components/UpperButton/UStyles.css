@@ -1,0 +1,17 @@
+.button { 
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    width: 9vw;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button p { 
+    font-family: 'Blogger Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
