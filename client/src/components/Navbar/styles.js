@@ -11,6 +11,7 @@ export const NavbarComponent = styled.div`
     left: 0px;
     top: 0px;
     padding-left: 4%;
+    z-index: 100;
 
     display: flex;
     justify-content: space-around;

@@ -6,7 +6,7 @@ import { FundoBanner } from "../../assets";
 function Banner2() {
     return (
         <div>
-            <PainelRoxo className="painel-roxo">
+            <PainelRoxo>
                 <TextBox>
                     <Text3> Nossos </Text3>
                     <Text2> parceiros </Text2>
