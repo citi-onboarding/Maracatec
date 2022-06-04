@@ -16,8 +16,6 @@ export const NavbarComponent = styled.div`
     display: flex;
     justify-content: space-around;
 
-    z-index: 1;
-
     .navbarContent{
         display: flex;
         flex-direction: row;
