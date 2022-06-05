@@ -1,13 +1,19 @@
-.circle { 
+.container {
+    cursor: pointer;
     background-color: #3B3B3B;
-    border-radius: 50%;
-    width: auto;
-    height: auto;
+    width: 40px;
+    height: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.circle :hover {
+.lbutton img { 
+    width: 24px;
+    height: 22px;
+}
+
+.container:hover  {
+    border-radius: 50%;
     background-color: #00A7A2;
 }

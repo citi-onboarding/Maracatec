@@ -1,32 +1,42 @@
-.body { 
-    background-color: aqua;
+.centerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.title p { 
+.title { 
+    width: 33vw;
+    height: auto;
     font-family: 'NES2';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     text-align: center;
-    color: #3B3B3B;
 }
 
-.buttonContainer { 
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.pink {
+    color: #ED2856;;
 }
 
-.cards {
-    width: auto;
-    height: auto;
+.blue {
+    color: #00A7A2;;
+}
+
+.upperButtonWrapper { 
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 64px 0px 40px 0px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderContainer {
+    width: 85vw;
 }

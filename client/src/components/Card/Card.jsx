@@ -1,16 +1,22 @@
 import React from "react";
-import './CardStyle.css';
-import { image } from './assets';
+import { imgCard } from "../../assets";
+import { LowerButton }  from '..';
+import './CPStyle.css';
 
 
-const Card = (props) => {
+const Card = ({item}) => {
 
-     return ( 
-         <div className="Container">
-             <img src="./image.png" alt="" />
-             <h3>Estimar ou não estimar? Eis a questão</h3>
-             <p>15/05/2022</p>
-         </div>
+    return ( 
+        <div className="Container">
+            <div className="image">
+                <a href= "" ><img src= { item.image } alt="" /></a>
+                <h3>{item.title}</h3>
+            </div>
+            <div className="info">
+                <p>{item.date}</p>
+                <LowerButton/>
+            </div>
+        </div>
      )
 }
 
