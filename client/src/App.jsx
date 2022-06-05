@@ -1,12 +1,17 @@
-import React from 'react'; 
-/* import { DynamicSlides } from './pages' */
-import { Carousel } from './pages';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styles/theme';
+import BannerPrincipal from './pages/BannerPrincipal';
+import { Banner2, Carousel } from './pages';
 
-const App = () => { 
-    return (
-        <>
-            <Carousel/>
-        </>
-    )
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <BannerPrincipal />
+      <Banner2/>
+      <Carousel/>
+    </ThemeProvider>
+  );
 }
+
 export default App;
