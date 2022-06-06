@@ -40,3 +40,19 @@
 .sliderContainer {
     width: 85vw;
 }
+
+.centerButton { 
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerButton button {
+    font-family: 'NES2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #F1F1F1;
+}

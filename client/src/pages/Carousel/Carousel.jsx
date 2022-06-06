@@ -1,3 +1,4 @@
+import { Button } from '../../components';
 import { Card, UpperButton } from '../../components';
 import React, { Component, useState } from "react";
 import Slider from "react-slick";
@@ -158,6 +159,9 @@ export default function Carousel() {
               })
             }
           </Slider>
+          <div className='centerButton'>
+            <Button text="Ler Mais" />
+          </div>
         </div>
       </div>    
     </>
