@@ -21,7 +21,7 @@ export const TextBox = styled.div`
     justify-content: center;
     @font-face {
             font-family: 'NES2';
-            src: url(../../assets/NES2.ttf);
+            src: url('{MainFont}') format('truetype');
         }
     //margin-top: 320px;
     font-family: 'NES2';
