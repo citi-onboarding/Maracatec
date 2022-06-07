@@ -37,7 +37,7 @@ export const TextBox = styled.div`
 `;
 
 export const PainelRoxo = styled.div`
-    position: absolute;
+    position: relative;
     top: 145vh;
     background-color: #4B4B70;
     max-width: 100%;
@@ -49,7 +49,7 @@ export const PainelRoxo = styled.div`
     padding: 240px;
     transform: skew(0deg, 5deg) translateY(-50px);
     margin:-8px;
-    margin-top: 287px;
+    margin-top: -570px;
 `;
 
 export const Text1 = styled.h2`

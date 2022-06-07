@@ -16,6 +16,6 @@ export const Timer = () => {
                 <p className="minutesName">Minutos</p>
                 <Button text='Increva-se para o evento' width='262px' reference=''/>
             </div>
-            </TimerComponent>
+        </TimerComponent>
     );
 }

@@ -9,6 +9,7 @@ export const TimerComponent = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    margin-top: -15%;
 
     h1{
         width: 35vw;   
