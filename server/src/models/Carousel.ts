@@ -15,4 +15,6 @@ export class Carousel {
     @Column()
     date: string
 
+    @Column()
+    url: string
 }

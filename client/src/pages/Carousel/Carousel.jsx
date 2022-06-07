@@ -1,6 +1,7 @@
 import { Button } from '../../components';
 import { Card, UpperButton } from '../../components';
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect} from "react";
+import axios from "axios";
 import Slider from "react-slick";
 import './CarouselStyle.css';
 import { imgCard } from '../../assets';
@@ -12,9 +13,7 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 2,
   initialSlide: 0,
-  /* customPaging: dots => (
-      <UpperButton/>
-  ), */
+
   responsive: [
     {
       breakpoint: 1260,
@@ -90,6 +89,11 @@ const spotifyValues = [
     date: "03/11/2022",
     title: "Estimar ou não estimar? Eis a questão (diferente)",
     image: imgCard
+  },
+  {
+    date: "03/11/2022",
+    title: "Estimar ou não estimar? Eis a questão (diferente) 1",
+    image: imgCard
   }
 ]
 
@@ -113,6 +117,7 @@ const youtubeValues = [
 
 export default function Carousel() {
 
+  /* const [infos, setInfos] = useState() */
   const [cards, setCards] = useState(allValues)
   const [toggles, setToggles] = useState([true, false, false])
 
