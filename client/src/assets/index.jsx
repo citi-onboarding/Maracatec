@@ -4,10 +4,14 @@ import MainFont from './NES2.ttf';
 import LogoMaracatec from './logo.png';
 import FontDescription from './BloggerSans.ttf';
 import ImageBanner1 from './Imagemheader.png';
+import StarSymbol from './symbol.png'
+import ChatBoxScreen from './screen.png'
 
 export {
     LogoCITi, FundoBanner, LogoMaracatec,
     MainFont,
     FontDescription,
-    ImageBanner1
+    ImageBanner1,
+    StarSymbol,
+    ChatBoxScreen
 };
