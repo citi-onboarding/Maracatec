@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.ubutton { 
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    border-style: none;
+    width: 9vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+} 
+.ubutton p { 
+    margin-right: 12%;
+    font-family: 'Blogger Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #F1F1F1;
+}
+
+#selected { 
+    background-color: #3B3B3B;
+}
+
+#diselected {
+    background-color: #E6E6E6;
+}

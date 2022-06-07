@@ -1,0 +1,19 @@
+.container {
+    cursor: pointer;
+    background-color: #3B3B3B;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lbutton img { 
+    width: 24px;
+    height: 22px;
+}
+
+.container:hover  {
+    border-radius: 50%;
+    background-color: #00A7A2;
+}
