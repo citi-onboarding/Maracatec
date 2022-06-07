@@ -1,6 +1,6 @@
 import React from "react";
 import { Icone } from "../../components";
-import { PainelVerde, Texts, ImagemCarangueijo, PainelPreto } from "./styles";
+import { PainelVerde, Texts, ImagemCarangueijo, PainelPreto, Content } from "./styles";
 import { LogoMaracatecBranca } from '../../assets';
 import { Carangueijo } from '../../assets';
 import { Banner1 } from '../../components';
@@ -11,7 +11,7 @@ import { Youtube1 } from '../../assets';
 
 function Footer() {
     return (
-        <div>
+        <Content>
             <ImagemCarangueijo>
                 <img src={Carangueijo} alt="" />
             </ImagemCarangueijo>
@@ -62,8 +62,8 @@ function Footer() {
                     </a>
                     
                 </div>
-            </PainelPreto>
-        </div>    
+            </PainelPreto>   
+        </Content>
     );
 }
 

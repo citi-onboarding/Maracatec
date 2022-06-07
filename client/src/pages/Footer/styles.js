@@ -4,6 +4,10 @@ import { Instagram2 } from '../../assets';
 import { Spotify2 } from '../../assets';
 import { Youtube2 } from '../../assets';
 
+export const Content = styled.div`
+    margin-top: -30%;
+`;
+
 export const PainelVerde = styled.div`
     background-color: #00A7A2;
     max-width: 100%;
