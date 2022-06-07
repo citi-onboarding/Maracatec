@@ -6,7 +6,7 @@ import { Navbar } from "../../components/Navbar";
 const BannerPrincipal = () => {
     return (
         <div>
-            <Navbar home='#Banner1' partner='' editions='' reference='' />
+            <Navbar home='{Banner1}' partner='' editions='' reference='' />
             <Banner1 />
         </div>
     );
