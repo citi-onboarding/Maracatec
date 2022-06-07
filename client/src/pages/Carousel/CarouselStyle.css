@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+.ContainerGeral{
+    position: relative;
+    transform: translateY(87%);
+    margin-bottom: -30%;
+}
+
 .title { 
     width: 33vw;
     height: auto;

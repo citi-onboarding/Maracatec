@@ -137,7 +137,7 @@ export default function Carousel() {
   }
 
   return (
-    <>
+    <div className="ContainerGeral">
       <div  className='centerTitle'>
         <div className='title'>
           <p>Dá uma olhada no que rolou nas 
@@ -168,7 +168,7 @@ export default function Carousel() {
             <Button text="Ler Mais" />
           </div>
         </div>
-      </div>    
-    </>
+      </div>   
+    </div>
   )
 }
