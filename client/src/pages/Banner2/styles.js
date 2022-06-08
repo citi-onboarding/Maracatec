@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainFont } from "../../assets";
+import {NES2} from "../../assets";
 import { FundoBanner } from "../../assets";
 
 /*export const Container = styled.div`
@@ -20,8 +20,8 @@ export const TextBox = styled.div`
     color: #F68224;
     justify-content: center;
     @font-face {
-            font-family: 'NES2';
-            src: url('{MainFont}') format('truetype');
+            font-family: NES2;
+            src: url(${NES2});
         }
     //margin-top: 320px;
     font-family: 'NES2';

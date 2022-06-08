@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MainFont } from '../../assets';
+import { NES2 } from '../../assets';
 import { FontDescription } from '../../assets';
 
 export const Banner1Component = styled.div`
@@ -14,8 +14,8 @@ export const Banner1Component = styled.div`
     }
     h1{
         @font-face {
-            font-family: 'NES2';
-            src: url('{MainFont}') format('truetype');
+            font-family: NES2;
+            src: url(${NES2});
         }
 
         font-family: 'NES2';
