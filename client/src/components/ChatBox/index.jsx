@@ -8,18 +8,27 @@ export const ChatBox = () => {
     const [name, setName] = useState('');
     const [emailClient, setEmailClient] = useState('');
     const [message, setMessage] = useState('');
-    
-    const sendEmail = async (event) => {
+
+    /*const sendEmail = async () => {
+        //sendEmail(event);
+        console.log(name, emailClient, message);
         try {
-            event.preventDefault()
-            await axios.post('https://localhost:3001/email', {name, emailClient, message})
+            //event.preventDefault()
+            await axios.post('https://localhost:3001/email', name, emailClient, message);
             console.log(Response);
             alert(`E-mail enviado com sucesso!`)
-            setName('')
-            setEmailClient('')
-            setMessage('')
         } catch (error) {
             alert(`Error: ${error}`)
+        }
+    }*/
+
+    async function sendEmail() {
+        const data = { name, emailClient, message };
+        try {
+            const response = await axios.post('http://localhost:3001/email', data);
+            alert(`E-mail enviado com sucesso!`);
+        } catch (error) {
+            console.log(error);
         }
     }
 
@@ -27,14 +36,16 @@ export const ChatBox = () => {
         <ChatBoxComponent>
             <div className="content">
                 <h1>Manda o <span className='pink'> papo!</span></h1>
-                <form onSubmit={sendEmail}>
-                    <input type='text' placeholder='Nome' required='required' value={name} onChange={(e) => {setName(e.target.value);}}/>
-                    <input type='email' placeholder='E-mail' required='required' value={emailClient} onChange={(e) => {setEmailClient(e.target.value);}}/>
-                    <textarea type='text' placeholder='Mensagem' required='required' className="message" value={message} onChange={(e) => {setMessage(e.target.value);}}/>
-                    <Button text='Enviar mensagem' width='195px' reference='' type='submit'/>
+                <form>
+                    <input type='text' placeholder='Nome' required='required' value={name} onChange={(e) => { setName(e.target.value) }} />
+                    <input type='email' placeholder='E-mail' required='required' value={emailClient} onChange={(e) => { setEmailClient(e.target.value) }} />
+                    <textarea type='text' placeholder='Mensagem' required='required' className="message" value={message} onChange={(e) => { setMessage(e.target.value) }} />
                 </form>
+                <div style={{ paddingTop: 10 }}>
+                    <Button text='Enviar mensagem' width='195px' reference='' type='submit' onClick={() => sendEmail()} />
+                </div>
             </div>
-            <img src={StarSymbol}/>
+            <img src={StarSymbol} />
         </ChatBoxComponent>
     );
 }
