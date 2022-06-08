@@ -67,6 +67,18 @@ export const TimerComponent = styled.div`
         margin-bottom: 0;
     }
 
+    .time{
+        font-size: 4vw;
+        line-height: 7vw;
+        align-items: center;
+        margin-top:4vw;
+        color: ${(props) => props.theme.colors.black};
+    }
+
+    .pink{
+        color: ${(props) => props.theme.colors.pink};
+    }
+
     .days{
         color:  ${(props) => props.theme.colors.green};
         grid-row-start: 1;
@@ -120,6 +132,6 @@ export const TimerComponent = styled.div`
     Button{
         position: absolute;
         margin-top: 5%;
-        margin-left: 2.5%;
+        left:40%;
     }
 `;
