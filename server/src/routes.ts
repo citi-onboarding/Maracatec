@@ -4,6 +4,7 @@ import BannerController from '@controllers/BannerController';
 import ImagesController from '@controllers/ImagesController';
 import TimerController from '@controllers/TimerController';
 import CarouselController from '@controllers/CarouselController'
+import { SendMail } from '@controllers/MailController';
 
 const routes = express.Router();
 const bannerController = new BannerController();
@@ -30,5 +31,7 @@ routes.post('/banner', bannerController.create);
 routes.get('/banner', bannerController.get);
 routes.delete('/banner/:id', bannerController.delete);
 routes.put('/banner/:id', bannerController.update);
+
+routes.post('/email', SendMail);
 
 export default routes;
