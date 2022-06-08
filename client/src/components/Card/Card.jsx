@@ -1,20 +1,21 @@
 import React from "react";
-import { imgCard } from "../../assets";
 import { LowerButton }  from '..';
 import './CPStyle.css';
+import { Image, Title } from "./style";
 
 
-const Card = ({item}) => {
+
+const Card = (item) => {
 
     return ( 
         <div className="Container">
-            <div className="image">
-                <a href= "" ><img src= { item.image } alt="" /></a>
-                <h3>{item.title}</h3>
+            <div className="seiLa">
+                <Image src={item.image} />
             </div>
+            <Title>{item.title}</Title>
             <div className="info">
                 <p>{item.date}</p>
-                <LowerButton/>
+                <LowerButton url = {item.url}/>
             </div>
         </div>
      )
