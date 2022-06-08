@@ -2,8 +2,14 @@ import React from "react";
 import { ImageBanner } from "../../components";
 import { Container, Text1, Text2, Text3, Caixinha, Fundo, PainelRoxo, TextBox } from './styles';
 import { FundoBanner } from "../../assets";
+import axios from 'axios';
 
 function Banner2() {
+
+    const getInfos = async() => {
+        const response = await axios.get('')
+    }
+
     return (
         <div>
             <PainelRoxo>
