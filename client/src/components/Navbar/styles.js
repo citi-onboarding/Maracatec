@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MainFont } from '../../assets';
+import { NES2 } from '../../assets';
 
 export const NavbarComponent = styled.div`
     background: ${(props) => props.theme.colors.background};
@@ -37,8 +37,8 @@ export const NavbarComponent = styled.div`
     a{
         text-decoration: none;
         @font-face {
-            font-family: 'NES2';
-            src: url('{MainFont}') format('truetype');
+            font-family: NES2;
+            src: url(${NES2});
         }
 
         font-family: 'NES2';

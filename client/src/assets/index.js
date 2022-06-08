@@ -3,7 +3,7 @@ import button from './button.png';
 import arrow from './arrow.png'
 import FundoBanner from './Rectangle29.png';
 import LogoMaracatec from './logo.png';
-import MainFont from './NES2.ttf';
+import NES2 from './NES2.ttf';
 import SecondaryFont from './Inter.ttf';
 import FontDescription from './BloggerSans.ttf';
 import ImageBanner1 from './Imagemheader.png';
@@ -25,7 +25,7 @@ export {
     arrow,
     FundoBanner, 
     LogoMaracatec,
-    MainFont,
+    NES2,
     FontDescription,
     ImageBanner1,
     StarSymbol,

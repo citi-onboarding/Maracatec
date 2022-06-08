@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Font } from '../../assets';
+import { NES2 } from '../../assets';
 
 export const ButtonComponent = styled.div`
     button{
@@ -16,8 +16,8 @@ export const ButtonComponent = styled.div`
         height: 44px;
 
         @font-face {
-            font-family: 'NES2';
-            src: url('{Font}') format('truetype');
+            font-family: NES2;
+            src: url(${NES2});
         }
 
         font-family: 'NES2';font-style: normal;
