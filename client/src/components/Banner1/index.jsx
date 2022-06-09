@@ -4,7 +4,6 @@ import { ImageBanner1 } from "../../assets";
 
 
 export const Banner1 = () => {
-
     return (
         <Banner1Component>
             <div className="content">

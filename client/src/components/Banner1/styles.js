@@ -3,7 +3,7 @@ import { NES2 } from '../../assets';
 import { FontDescription } from '../../assets';
 
 export const Banner1Component = styled.div`
-    margin-top: 400px;
+    margin-top: 300px;
     margin-left: 3%;
     height: 200px;
     

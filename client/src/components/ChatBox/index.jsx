@@ -33,7 +33,7 @@ export const ChatBox = () => {
     }
 
     return (
-        <ChatBoxComponent>
+        <ChatBoxComponent   id="ContactLink">
             <div className="content">
                 <h1>Manda o <span className='pink'> papo!</span></h1>
                 <form>

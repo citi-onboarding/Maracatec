@@ -19,7 +19,7 @@ function Banner2() {
 
     return (
         <div>
-            <PainelRoxo>
+            <PainelRoxo  id="PartnerLink">
                 <TextBox>
                     <Text3> Nossos </Text3>
                     <Text2> parceiros </Text2>

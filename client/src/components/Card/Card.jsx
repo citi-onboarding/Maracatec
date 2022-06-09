@@ -9,7 +9,7 @@ const Card = (item) => {
 
     return ( 
         <div className="Container">
-            <div className="seiLa">
+            <div className="content">
                 <Image src={item.image} />
             </div>
             <Title>{item.title}</Title>
