@@ -1,17 +1,17 @@
 import { Button } from '../../components';
 import { Card, UpperButton } from '../../components';
-import React, { Component, useState, useEffect} from "react";
+import React, { useState, useEffect} from "react";
+import { todos, spotify, youtube } from '../../assets';
 import axios from "axios";
 import Slider from "react-slick";
 import './CarouselStyle.css';
-import { imgCard } from '../../assets';
 
 const settings = {
   dots: false,
   infinite: true,
   speed: 100,
   slidesToShow: 3,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   initialSlide: 0,
 
   responsive: [
@@ -21,7 +21,7 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -31,7 +31,7 @@ const settings = {
         slidesToScroll: 1,
         initialSlide: 2,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -40,13 +40,13 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     }
   ]
 };
 
-const allValues = [
+/* const allValues = [
   {
     date: "15/05/2022",
     title: "Estimar ou não estimar? Eis a questão 1",
@@ -113,26 +113,36 @@ const youtubeValues = [
     title: "Estimar ou não estimar? Eis a questão (alternativo)",
     image: imgCard
   }
-]
+] */
 
 export default function Carousel() {
 
-  /* const [infos, setInfos] = useState() */
-  const [cards, setCards] = useState(allValues)
+  const [infos, setInfos] = useState([])
+
+  const getInfos = async () => {
+    const response = await axios.get('http://localhost:3001/Carousel/')
+    setInfos(response.data)
+  }
+
+  useEffect(() => {
+    getInfos();
+  }, [infos]);
+
+  const [cards, setCards] = useState()
   const [toggles, setToggles] = useState([true, false, false])
 
   function didTapAllValues(){
-    setCards(allValues)
+    setCards(infos.slice(0,9))
     setToggles([true, false, false])
   }
 
   function didTapSpotifyValues(){
-    setCards(spotifyValues)
+    setCards(infos.slice(3,9))
     setToggles([false, true, false])
   }
 
   function didTapYoutubeValues(){
-    setCards(youtubeValues)
+    setCards(infos.slice(0,3))
     setToggles([false, false, true])
   }
 
@@ -145,22 +155,26 @@ export default function Carousel() {
         </div>
       </div>
       <div className='upperButtonWrapper'>
-        <UpperButton toggle={toggles[0]} onClick = {() => {
+        <UpperButton  href={todos}
+        text = "Todos" toggle={toggles[0]} onClick = {() => {
           didTapAllValues()
-        }}/>
-        <UpperButton toggle={toggles[1]} onClick = {() => {
+        }}/> 
+        <UpperButton href={ spotify }
+         text = "Spotify" toggle={toggles[1]} onClick = {() => {
           didTapSpotifyValues()
-        }}/>
-        <UpperButton toggle={toggles[2]} onClick = {() => {
+        }}/> 
+        <UpperButton href={ youtube } 
+        text = "Youtube" toggle={toggles[2]} onClick = {() => {
           didTapYoutubeValues()
-        }} />
+        }}/>
       </div>
       <div className='center'>
         <div className='sliderContainer'>
           <Slider  {...settings}>
             {
-              cards.map((card) => {
-                return <Card item={card} key={card.date} />
+              cards?.map((card) => {
+                const { image, description, date, url } = card; 
+                return <Card image= {image} title= {description} date={date} url={url} />
               })
             }
           </Slider>

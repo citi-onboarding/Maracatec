@@ -5,6 +5,6 @@ export class Images{
     @PrimaryGeneratedColumn()
     id: number
  
-    @Column("text", { array: true })
-    images: string[]
+    @Column()
+    images: string
 }

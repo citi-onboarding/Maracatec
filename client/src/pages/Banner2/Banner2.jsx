@@ -1,9 +1,22 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { ImageBanner } from "../../components";
 import { Container, Text1, Text2, Text3, Caixinha, Fundo, PainelRoxo, TextBox } from './styles';
 import { FundoBanner } from "../../assets";
+import axios from 'axios';
 
 function Banner2() {
+    const [Images, setImages] = useState([]);
+
+    const getInfos = async() => {
+        const response = await axios.get('http://localhost:3001/images');
+        setImages(response.data);
+    }
+
+    useEffect(()=>{
+        getInfos();
+    }, []);
+
     return (
         <div>
             <PainelRoxo>
@@ -13,12 +26,10 @@ function Banner2() {
                     <Text3> de movimento </Text3>
                 </TextBox>
                 <Caixinha>
-                    <ImageBanner image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" text="Imagen Test" />
-                    <ImageBanner image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" text="Imagen Test" />
-                    <ImageBanner image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" text="Imagen Test" />
-                    <ImageBanner image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" text="Imagen Test" />
-                    <ImageBanner image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" text="Imagen Test" />
-                    <ImageBanner image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" text="Imagen Test" />
+                    { Images.slice(0,6).map((Image)=>{
+                        const { images } = Image;
+                        return <ImageBanner image={images} text="Test"/>
+                    })}
                 </Caixinha>
             </PainelRoxo>
         </div>
