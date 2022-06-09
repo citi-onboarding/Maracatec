@@ -31,7 +31,7 @@ function Footer() {
                     </div>
                     <div className="Contato">
                         <h4> Contato </h4>
-                        <p> maracatec.event@gmail.com </p>
+                        <p>maracatec.event@gmail.com</p>
                         <p> +55 (99) 99999-9999 </p>
                     </div>
                 </Texts>
