@@ -18,7 +18,7 @@ function Footer() {
             <PainelVerde>
                 <Texts>
                     <div className="Logo">
-                        <img src={ LogoMaracatecBranca } alt="" />
+                        <img src={LogoMaracatecBranca} alt="" />
                     </div>
                     <div className="Evento">
                         <h4> Evento </h4>
@@ -31,38 +31,38 @@ function Footer() {
                     </div>
                     <div className="Contato">
                         <h4> Contato </h4>
-                        <p> e-mail@email.com </p>
+                        <p> maracatec.event@gmail.com </p>
                         <p> +55 (99) 99999-9999 </p>
                     </div>
-                </Texts>    
+                </Texts>
             </PainelVerde>
             <PainelPreto>
                 <div className="Text">
-                    <img src={TextFooter} alt="" id="Imagem"/>
+                    <img src={TextFooter} alt="" id="Imagem" />
                 </div>
                 <div className="SocialMidias">
-                 
+
                     <a href=" https://instagram.com/maracatec?igshid=YmMyMTA2M2Y=" id="instagram">
                         <div className="Imagem1">
-                            <img src={Instagram1} alt="" id="instagram1"/>
-                        </div>       
-                    </a>   
-                                                  
+                            <img src={Instagram1} alt="" id="instagram1" />
+                        </div>
+                    </a>
+
                     <a href="https://open.spotify.com/show/7KhJlg1dNepR1AxDruzGPJ?si=NQMQHxMtSRK1DOqz3zJEqw" id="spotify">
                         <div className="Imagem1">
-                            <img src={Spotify1} alt="" id="spotify1"/>
+                            <img src={Spotify1} alt="" id="spotify1" />
                         </div>
-                        
+
                     </a>
-            
+
                     <a href="https://www.youtube.com/channel/UCRImnylwPm4EbVs38XjHPGQ" id="youtube">
                         <div className="Imagem1">
-                            <img src={Youtube1} alt="" id="youtube1"/>
+                            <img src={Youtube1} alt="" id="youtube1" />
                         </div>
                     </a>
-                    
+
                 </div>
-            </PainelPreto>   
+            </PainelPreto>
         </Content>
     );
 }
