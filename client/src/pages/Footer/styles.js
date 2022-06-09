@@ -27,6 +27,11 @@ export const Texts = styled.div`
     transform: skew(0deg, -2deg);
     color: #F1F1F1;
 
+    @font-face {
+            font-family: Blogger Sans;
+            src: url(${FontDescription});
+        }
+
     .Evento{
         display: flex;
         flex-direction: column;
@@ -61,16 +66,17 @@ export const Texts = styled.div`
         justify-content: space-between;
     }
 
-    a{
-        @font-face {
-            font-family: 'Blogger Sans';
-            src: url('{FontDescription}') format('truetype');
-        }
+    a{ 
         text-decoration: none;
         color: ${(props) => props.theme.colors.white};
         margin: 8px;
         font-family: 'Blogger Sans';
         font-style: normal;
+        font-size: 18px;
+    }
+
+    p{
+        font-family: 'Blogger Sans';
         font-size: 18px;
     }
 `;
