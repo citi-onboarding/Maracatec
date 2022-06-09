@@ -9,7 +9,6 @@ export const TimerComponent = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    tranform: translateY(0px);
 
     h1{
         width: 35vw;   
@@ -132,6 +131,15 @@ export const TimerComponent = styled.div`
     Button{
         position: absolute;
         margin-top: 5%;
-        left:40%;
+        left:43%;
+        @media(min-width: 1220px) and (max-width: 1280px) {
+            left: 39%
+        }
+        @media(min-width: 1280px) and (max-width: 1366px) {
+            left: 40%
+        }
+        @media(min-width: 1366px) and (max-width: 1600px) {
+            left: 41.5%
+        }
     }
 `;
