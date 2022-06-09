@@ -41,7 +41,7 @@ export const ChatBox = () => {
                     <input type='email' placeholder='E-mail' required='required' value={email} onChange={(e) => { setEmail(e.target.value) }} />
                     <textarea type='text' placeholder='Mensagem' required='required' className="message" value={message} onChange={(e) => { setMessage(e.target.value) }} />
                 </form>
-                <div style={{ paddingTop: 10 }}>
+                <div>
                     <Button text='Enviar mensagem' width='195px' reference='' type='submit' onClick={() => sendEmail()} />
                 </div>
             </div>

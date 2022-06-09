@@ -91,6 +91,11 @@ export const ChatBoxComponent = styled.div`
         text-align: left;
     }
 
+    .message{
+        height: 6vw;
+        margin-bottom: 2.5vw;
+    }
+
     img{
         width: 12.6vw;
         position: absolute;
