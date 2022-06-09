@@ -5,7 +5,8 @@ import { Navbar } from "../../components/Navbar";
 
 const BannerPrincipal = () => {
     return (
-        <div>
+        <div id="HomeLink">
+            <a href="BannerPrincipal"></a>
             <Navbar home='{Banner1}' partner='' editions='' reference='' />
             <Banner1 />
         </div>

@@ -34,7 +34,7 @@ export const NavbarComponent = styled.div`
         align-self: center;
     }
 
-    a{
+    a {
         text-decoration: none;
         @font-face {
             font-family: NES2;

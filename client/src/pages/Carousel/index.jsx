@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
 
 export { 
-    Carousel
+    Carousel,
 }
