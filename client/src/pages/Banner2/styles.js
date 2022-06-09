@@ -38,7 +38,7 @@ export const TextBox = styled.div`
 
 export const PainelRoxo = styled.div`
     position: relative;
-    top: 145vh;
+    top: 1150px;
     background-color: #4B4B70;
     max-width: 100%;
     height: 100%;

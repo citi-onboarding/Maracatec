@@ -5,7 +5,7 @@ import { Spotify2 } from '../../assets';
 import { Youtube2 } from '../../assets';
 
 export const Content = styled.div`
-    margin-top: -30%;
+    margin-top: -200px;
 `;
 
 export const PainelVerde = styled.div`

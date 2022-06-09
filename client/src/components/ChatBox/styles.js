@@ -10,7 +10,7 @@ export const ChatBoxComponent = styled.div`
     width: 55vw;
     height: 44vw;
 
-    margin-top: 190vh;
+    margin-top: 1700px;
     margin-left: 22.5%;
     padding: 0;
 
