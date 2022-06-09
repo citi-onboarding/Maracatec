@@ -16,8 +16,11 @@ import Spotify1 from './Spotify1.png';
 import Spotify2 from './Spotify2.png';
 import Youtube1 from './Youtube1.png';
 import Youtube2 from './Youtube2.png';
-import StarSymbol from './symbol.png'
-import ChatBoxScreen from './screen.png'
+import StarSymbol from './symbol.png';
+import ChatBoxScreen from './screen.png';
+import youtube from './youtube.png';
+import spotify from './spotify.png';
+import todos from './todos.png';
 
 export {
     imgCard,
@@ -39,5 +42,8 @@ export {
     Spotify1,
     Spotify2,
     Youtube1,
-    Youtube2
+    Youtube2,
+    youtube,
+    spotify,
+    todos
 }
