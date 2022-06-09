@@ -46,74 +46,7 @@ const settings = {
   ]
 };
 
-/* const allValues = [
-  {
-    date: "15/05/2022",
-    title: "Estimar ou não estimar? Eis a questão 1",
-    image: imgCard
-  },
-  {
-    date: "15/05/2022",
-    title: "Estimar ou não estimar? Eis a questão 2",
-    image: imgCard
-  },
-  {
-    date: "15/05/2022",
-    title: "Estimar ou não estimar? Eis a questão 3",
-    image: imgCard
-  },
-  {
-    date: "15/05/2022",
-    title: "Estimar ou não estimar? Eis a questão 4",
-    image: imgCard
-  },
-  {
-    date: "15/05/2022",
-    title: "Estimar ou não estimar? Eis a questão 5",
-    image: imgCard
-  }
-]
 
-const spotifyValues = [
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (diferente)",
-    image: imgCard
-  },
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (diferente)",
-    image: imgCard
-  },
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (diferente)",
-    image: imgCard
-  },
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (diferente) 1",
-    image: imgCard
-  }
-]
-
-const youtubeValues = [
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (alternativo)",
-    image: imgCard
-  },
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (alternativo)",
-    image: imgCard
-  },
-  {
-    date: "03/11/2022",
-    title: "Estimar ou não estimar? Eis a questão (alternativo)",
-    image: imgCard
-  }
-] */
 
 export default function Carousel() {
 
