@@ -42,6 +42,10 @@ export const Banner1Component = styled.div`
         color: ${(props) => props.theme.colors.green};
     }
 
+    .black{
+        font-weight: bold;
+    }
+
     p{
         @font-face {
             font-family: 'Blogger Sans';
