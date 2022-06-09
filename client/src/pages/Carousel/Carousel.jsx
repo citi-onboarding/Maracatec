@@ -1,7 +1,10 @@
+import React, { useState, useEffect} from "react";
 import { Button } from '../../components';
 import { Card, UpperButton } from '../../components';
-import React, { useState, useEffect} from "react";
 import { todos, spotify, youtube } from '../../assets';
+import { StarSymbol } from "../../assets";
+import { ChatBox } from "../../components/ChatBox";
+import Footer from "../Footer";
 import axios from "axios";
 import Slider from "react-slick";
 import './CarouselStyle.css';
@@ -115,7 +118,7 @@ export default function Carousel() {
             <Button text="Ler Mais" />
           </div>
         </div>
-      </div>   
+      </div> 
     </div>
   )
 }

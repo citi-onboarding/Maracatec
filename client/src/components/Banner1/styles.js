@@ -3,7 +3,9 @@ import { NES2 } from '../../assets';
 import { FontDescription } from '../../assets';
 
 export const Banner1Component = styled.div`
-    margin-top: 200px;
+    margin-top: 400px;
+    margin-left: 3%;
+    height: 200px;
     
     display: flex;
     justify-content: space-around;
