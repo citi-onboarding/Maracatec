@@ -1,10 +1,6 @@
 import React, { Component, useState, useEffect} from "react";
-import { Button } from '../../components';
-import { Card, UpperButton } from '../../components';
+import { Button, Card, UpperButton } from '../../components';
 import { todos, spotify, youtube } from '../../assets';
-import { StarSymbol } from "../../assets";
-import { ChatBox } from "../../components/ChatBox";
-import Footer from "../Footer";
 import axios from "axios";
 import Slider from "react-slick";
 import './CarouselStyle.css';
@@ -48,8 +44,6 @@ const settings = {
     }
   ]
 };
-
-
 
 export default function Carousel() {
 

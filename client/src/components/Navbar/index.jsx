@@ -6,7 +6,7 @@ import { Banner1 } from "../Banner1";
 
 
 export const Navbar = (NavbarProps) => {
-    const { home, partner, editions, reference } = NavbarProps;
+    const { reference } = NavbarProps;
     
     function closeclickhome() { 
         var menu = document.querySelector('HomeCall')
@@ -31,7 +31,6 @@ export const Navbar = (NavbarProps) => {
         }
 
     }
-
 
     function closeclickcarousel() { 
         var menu = document.querySelector('CarouselCall')

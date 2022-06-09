@@ -6,8 +6,7 @@ import { Image, Title } from "./style";
 
 
 const Card = (item) => {
-
-    return ( 
+ return ( 
         <div className="Container">
             <div className="content">
                 <Image src={item.image} />

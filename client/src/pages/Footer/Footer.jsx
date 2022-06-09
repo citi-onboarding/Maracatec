@@ -1,13 +1,7 @@
 import React from "react";
-import { Icone } from "../../components";
+import { Icone, Banner1 } from "../../components";
 import { PainelVerde, Texts, ImagemCarangueijo, PainelPreto, Content } from "./styles";
-import { LogoMaracatecBranca } from '../../assets';
-import { Carangueijo } from '../../assets';
-import { Banner1 } from '../../components';
-import { TextFooter } from "../../assets";
-import { Instagram1 } from '../../assets';
-import { Spotify1 } from '../../assets';
-import { Youtube1 } from '../../assets';
+import { LogoMaracatecBranca, Carangueijo, TextFooter, Instagram1, Spotify1, Youtube1} from '../../assets';
 
 function Footer() {
 

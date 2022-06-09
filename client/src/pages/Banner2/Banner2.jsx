@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState }  from "react";
 import { ImageBanner } from "../../components";
 import { Container, Text1, Text2, Text3, Caixinha, Fundo, PainelRoxo, TextBox } from './styles';
 import { FundoBanner } from "../../assets";

@@ -6,7 +6,7 @@ function Icone (IconeProps) {
     return(
         <Box>
             <a href={link}>
-                <img src={image} alt="" />
+                <img src={image}/>
             </a>
         </Box>
     );
