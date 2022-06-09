@@ -51,10 +51,26 @@ export const Timer = () => {
             )
         }
     };   
+
+    const [date, setDate] = useState([]);
+
+    const getInfos = async() => {
+        const response = await axios.get('http://localhost:3001/timer/');
+        setDate(response.data);
+    }
+
+    useEffect(()=>{
+        getInfos();
+    }, []);
+
+    function defineDate(eventDay){
+        const { EventDay } = eventDay;
+        return <CountdownTimer targetDate={EventDay} />
+    }
     return (
         <TimerComponent>
             <h1>Contagem regressiva para nosso <span className='green'>próximo encontro</span></h1>
-            <CountdownTimer targetDate={'2022-06-10T15:41:00'} />
+            {date.slice(-1).map(defineDate)}
         </TimerComponent>
     );
 }
