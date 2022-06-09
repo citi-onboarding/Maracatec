@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class TimerController implements Crud {
 
     async create(request: Request, response: Response){
-        const {CurrentDays, CurrentHours, CurrentMinutes, EventDays, EventHours, EventMinutes} = request.body;
+        const {EventDay} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(CurrentDays, CurrentHours, CurrentMinutes, EventDays, EventHours, EventMinutes);
+        const isAnyUndefined = Citi.areValuesUndefined(EventDay);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newTimer = { CurrentDays, CurrentHours, CurrentMinutes, EventDays, EventHours, EventMinutes };
+        const newTimer = { EventDay };
         const {httpStatus, message} = await Citi.insertIntoDatabase(Timer, newTimer);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class TimerController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {CurrentDays, CurrentHours, CurrentMinutes, EventDays, EventHours, EventMinutes } = request.body;
+        const {EventDay } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(CurrentDays, CurrentHours, CurrentMinutes, EventDays, EventHours, EventMinutes, id);
+        const isAnyUndefined = Citi.areValuesUndefined(EventDay, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const timerWithUpdatedValues = { CurrentDays, CurrentHours, CurrentMinutes, EventDays, EventHours, EventMinutes };
+        const timerWithUpdatedValues = { EventDay };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Timer, id, timerWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
