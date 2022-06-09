@@ -7,7 +7,7 @@ const UpperButton = ({href, text, onClick, toggle}) => {
     return (
             <button id= {toggle ? "selected" : "diselected"} onClick={onClick} className="ubutton">
                 <div className="circle">
-                    <img src={href}   alt="" />
+                    <img src={href}/>
                 </div>
                 <p>{text}</p>
             </button>

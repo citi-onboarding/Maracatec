@@ -3,7 +3,7 @@ import { NES2 } from '../../assets';
 
 export const ButtonComponent = styled.div`
     button{
-        background: rgba(0, 167, 162, 1);
+        background: ${(props) => props.theme.colors.green};
         border: 2px solid rgba(0, 167, 162, 1);
         border-radius: 20px;
         box-sizing: border-box;

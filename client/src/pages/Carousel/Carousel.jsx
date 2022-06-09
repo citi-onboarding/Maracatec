@@ -1,10 +1,6 @@
-import React, { useState, useEffect} from "react";
-import { Button } from '../../components';
-import { Card, UpperButton } from '../../components';
+import React, { Component, useState, useEffect} from "react";
+import { Button, Card, UpperButton } from '../../components';
 import { todos, spotify, youtube } from '../../assets';
-import { StarSymbol } from "../../assets";
-import { ChatBox } from "../../components/ChatBox";
-import Footer from "../Footer";
 import axios from "axios";
 import Slider from "react-slick";
 import './CarouselStyle.css';
@@ -49,8 +45,6 @@ const settings = {
   ]
 };
 
-
-
 export default function Carousel() {
 
   const [infos, setInfos] = useState([])
@@ -84,27 +78,27 @@ export default function Carousel() {
 
   return (
     <div className="ContainerGeral">
-      <div  className='centerTitle'>
+      <div  className='centerTitle' id='CarouselLink'>
         <div className='title'>
           <p>Dá uma olhada no que rolou nas 
           <span className='pink'> edições passadas </span> do <span className='blue'>evento</span></p>
         </div>
       </div>
       <div className='upperButtonWrapper'>
-        <UpperButton  href={todos}
-        text = "Todos" toggle={toggles[0]} onClick = {() => {
-          didTapAllValues()
-        }}/> 
-        <UpperButton href={ spotify }
-         text = "Spotify" toggle={toggles[1]} onClick = {() => {
-          didTapSpotifyValues()
-        }}/> 
-        <UpperButton href={ youtube } 
-        text = "Youtube" toggle={toggles[2]} onClick = {() => {
-          didTapYoutubeValues()
-        }}/>
-      </div>
-      <div className='center'>
+          <UpperButton href={todos}
+          text = "Todos" toggle={toggles[0]} onClick = {() => {
+            didTapAllValues()
+          }}/> 
+          <UpperButton href={ spotify }
+          text = "Spotify" toggle={toggles[1]} onClick = {() => {
+            didTapSpotifyValues()
+          }}/> 
+          <UpperButton href={ youtube } 
+          text = "Youtube" toggle={toggles[2]} onClick = {() => {
+            didTapYoutubeValues()
+          }}/>
+        </div>
+        <div className='center'>
         <div className='sliderContainer'>
           <Slider  {...settings}>
             {
@@ -115,7 +109,9 @@ export default function Carousel() {
             }
           </Slider>
           <div className='centerButton'>
-            <Button text="Ler Mais" />
+            <a href='https://www.youtube.com/channel/UCRImnylwPm4EbVs38XjHPGQ' target='_blank'>
+              <Button  text="Ver Mais" />
+            </a>
           </div>
         </div>
       </div> 

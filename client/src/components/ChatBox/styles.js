@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { MainFont } from '../../assets';
-import { FontDescription } from '../../assets';
+import { MainFont, FontDescription } from '../../assets';
 import { ChatBoxScreen } from '../../assets';
 
 export const ChatBoxComponent = styled.div`

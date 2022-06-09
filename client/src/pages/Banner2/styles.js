@@ -1,34 +1,19 @@
 import styled from "styled-components";
-import {NES2} from "../../assets";
-import { FundoBanner } from "../../assets";
-
-/*export const Container = styled.div`
-
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-`;*/
+import {NES2, FundoBanner} from "../../assets";
 
 export const TextBox = styled.div`
     display: flex;
     transform: skew(0deg, -5deg);
     margin: 5px;
-    color: #F68224;
+    color: ${(props) => props.theme.colors.orange};
     justify-content: center;
     @font-face {
             font-family: NES2;
             src: url(${NES2});
         }
-    //margin-top: 320px;
     font-family: 'NES2';
-    //font-style: normal;
-    //font-size: 20px;
     @media(max-width: 1200px){
-        width:100%;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin: 405px 0 0 100px;
@@ -39,7 +24,7 @@ export const TextBox = styled.div`
 export const PainelRoxo = styled.div`
     position: relative;
     top: 1150px;
-    background-color: #4B4B70;
+    background-color: ${(props) => props.theme.colors.blue};
     max-width: 100%;
     height: 100%;
     display: flex;
@@ -54,21 +39,20 @@ export const PainelRoxo = styled.div`
 
 export const Text1 = styled.h2`
     bottom: 5px;
-    color: #F1F1F1;
+    color: ${(props) => props.theme.colors.background};
 `;
 export const Text2 = styled.h2`
     margin: 5px;
-    color: #F68224;
+    color: ${(props) => props.theme.colors.orange};
 `;
 export const Text3 = styled.h2`
     margin: 5px;
-    color: #F1F1F1;
+    color: ${(props) => props.theme.colors.background};
 `;
 
 export const Caixinha = styled.div`
     display: flex;
     transform: skew(0deg, -5deg);
-    //padding: 30px 215px 0px 215px;
     @media(max-width: 1200px){
         width:100%;
         align-items: center;
@@ -78,8 +62,6 @@ export const Caixinha = styled.div`
 `;
 
 export const Fundo = styled.img`
-
     width: 100%;
     height: 100%;
-    
 `;

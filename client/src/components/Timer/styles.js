@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { MainFont } from '../../assets';
-import { SecondaryFont } from '../../assets';
+import { MainFont, SecondaryFont } from '../../assets';
 
 export const TimerComponent = styled.div`
     position: relative;

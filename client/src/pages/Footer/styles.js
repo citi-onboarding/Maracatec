@@ -1,15 +1,12 @@
 import styled from "styled-components";
-import { FontDescription } from "../../assets";
-import { Instagram2 } from '../../assets';
-import { Spotify2 } from '../../assets';
-import { Youtube2 } from '../../assets';
+import { FontDescription, Instagram2, Spotify2, Youtube2 } from "../../assets";
 
 export const Content = styled.div`
     margin-top: -200px;
 `;
 
 export const PainelVerde = styled.div`
-    background-color: #00A7A2;
+    background-color: ${(props) => props.theme.colors.green};
     max-width: 100%;
     height: 100%;
     display: flex;
@@ -127,5 +124,4 @@ export const PainelPreto = styled.div`
     #youtube :hover{
         background: url(${Youtube2}) no-repeat;
     }
-
 `;

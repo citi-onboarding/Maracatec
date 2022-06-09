@@ -6,7 +6,7 @@ const Lowerbutton = (props) => {
     return (
         <div className="container">
             <div className="lbutton">
-                <a href = {props.url} ><img src= { arrow } alt="" /></a>
+                <a href = {props.url} ><img src= { arrow }/></a>
             </div>
         </div>
     )

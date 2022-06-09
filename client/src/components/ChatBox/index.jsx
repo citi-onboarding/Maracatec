@@ -9,19 +9,6 @@ export const ChatBox = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    /*const sendEmail = async () => {
-        //sendEmail(event);
-        console.log(name, emailClient, message);
-        try {
-            //event.preventDefault()
-            await axios.post('https://localhost:3001/email', name, emailClient, message);
-            console.log(Response);
-            alert(`E-mail enviado com sucesso!`)
-        } catch (error) {
-            alert(`Error: ${error}`)
-        }
-    }*/
-
     async function sendEmail() {
         const data = { name, email, message };
         try {
@@ -33,7 +20,7 @@ export const ChatBox = () => {
     }
 
     return (
-        <ChatBoxComponent>
+        <ChatBoxComponent   id="ContactLink">
             <div className="content">
                 <h1>Manda o <span className='pink'> papo!</span></h1>
                 <form>
