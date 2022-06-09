@@ -1,12 +1,12 @@
 import React from "react";
-import {ButtonComponent} from './styles';
+import { ButtonComponent } from './styles';
 
 
 export const Button = (ButtonProps) => {
-    const { text, width, reference } = ButtonProps;
+    const { text, width, reference, onClick } = ButtonProps;
     return (
         <ButtonComponent>
-            <button href={reference} style = {{width: ButtonProps.width}}> {text} </button>
+            <button href={reference} style={{ width: ButtonProps.width }} onClick={onClick}> {text} </button>
         </ButtonComponent>
     );
 }

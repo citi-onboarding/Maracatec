@@ -25,6 +25,7 @@ export const ChatBoxComponent = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     h1{
@@ -58,7 +59,7 @@ export const ChatBoxComponent = styled.div`
         align-items: center;
     }
    
-    input{
+    input, textarea{
         width: 100%;
         height: 3vw;
 
@@ -68,16 +69,11 @@ export const ChatBoxComponent = styled.div`
         background-color: rgba(1,1,1,0);
     }
 
-    input:focus{
+    input:focus, textarea:focus{
         outline: 0;
     }
 
-    .message{
-        height: 7vw;
-        padding-top: 0px;
-    }
-
-    input::placeholder{
+    input::placeholder, textarea::placeholder{
        
         @font-face {
             font-family: 'Blogger Sans';
@@ -93,6 +89,11 @@ export const ChatBoxComponent = styled.div`
         color: ${(props) => props.theme.colors.gray};
 
         text-align: left;
+    }
+
+    .message{
+        height: 6vw;
+        margin-bottom: 2.5vw;
     }
 
     img{
