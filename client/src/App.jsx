@@ -8,9 +8,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BannerPrincipal />
-      <Banner2/>
-      <TimerCard/>  
-      <EndPage/>
+      <Banner2 />
+      <TimerCard />
+      <EndPage />
     </ThemeProvider>
   );
 }

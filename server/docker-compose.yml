@@ -15,7 +15,7 @@ services:
       - "3001:3001"
     depends_on:
       - db
-    
+
   db:
     container_name: ${DATABASE_NAME}-db
     restart: always

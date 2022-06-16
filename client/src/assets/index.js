@@ -29,7 +29,7 @@ export {
     SecondaryFont,
     FontDescription,
     ImageBanner1,
-    FundoBanner, 
+    FundoBanner,
     imgCard,
     button,
     arrow,

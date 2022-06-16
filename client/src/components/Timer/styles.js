@@ -126,19 +126,4 @@ export const TimerComponent = styled.div`
         grid-column-start: 7;
         grid-column-end: 9;
     }
-
-    Button{
-        position: absolute;
-        margin-top: 5%;
-        left:43%;
-        @media(min-width: 1220px) and (max-width: 1280px) {
-            left: 39%
-        }
-        @media(min-width: 1280px) and (max-width: 1366px) {
-            left: 40%
-        }
-        @media(min-width: 1366px) and (max-width: 1600px) {
-            left: 41.5%
-        }
-    }
 `;
