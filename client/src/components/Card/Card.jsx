@@ -1,23 +1,25 @@
 import React from "react";
-import { LowerButton }  from '..';
+import { LowerButton } from '..';
 import './CPStyle.css';
 import { Image, Title } from "./style";
 
 
 
 const Card = (item) => {
- return ( 
+    return (
         <div className="Container">
             <div className="content">
-                <Image src={item.image} />
+                <a href={item.url}>
+                    <Image src={item.image} />
+                </a>
             </div>
             <Title>{item.title}</Title>
             <div className="info">
                 <p>{item.date}</p>
-                <LowerButton url = {item.url}/>
+                <LowerButton url={item.url} />
             </div>
         </div>
-     )
+    )
 }
 
 export default Card; 

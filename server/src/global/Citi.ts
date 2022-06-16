@@ -1,5 +1,6 @@
+// @ts-nocheck
 import { DeepPartial, EntityTarget } from 'typeorm';
-import { connection } from 'src/database/connection';
+import { connection } from '../database/connection';
 import Message from "./Message";
 import Terminal from './Terminal';
 import {
@@ -13,7 +14,7 @@ import {
 export default class Citi {
 
     public static areValuesUndefined(...elements: string[]): boolean {
-        const isAnyUndefined  =  elements.some((element) => {
+        const isAnyUndefined = elements.some((element) => {
             return element === undefined;
         })
         return isAnyUndefined;
@@ -27,8 +28,8 @@ export default class Citi {
             return {
                 httpStatus: 201,
                 message: Message.INSERTED_IN_DATABASE
-            }; 
-        } catch(error){
+            };
+        } catch (error) {
             Terminal.show(Message.ERROR_INSERTING_DATABASE);
             return {
                 httpStatus: 400,
@@ -46,7 +47,7 @@ export default class Citi {
                 values: repositoryValues,
                 httpStatus: 200
             };
-        } catch(error){
+        } catch (error) {
             Terminal.show(Message.ERROR_GETTING_VALUES_FROM_DATABASE);
             return {
                 values: [],
@@ -65,14 +66,14 @@ export default class Citi {
                 }
             })
 
-            if(valueFound.length === 0) throw new Error('Nao foi encontrado')
-            
+            if (valueFound.length === 0) throw new Error('Nao foi encontrado')
+
             Terminal.show(Message.VALUE_WAS_FOUND);
             return {
                 value: valueFound[0],
                 message: Message.VALUE_WAS_FOUND
-            }; 
-        } catch(error){
+            };
+        } catch (error) {
             Terminal.show(Message.VALUE_WAS_NOT_FOUND);
             return {
                 value: undefined,
@@ -81,7 +82,7 @@ export default class Citi {
         }
     }
 
-    static async deleteValue<Type>(entity: EntityTarget<Type>, object: Type): Promise<RemoveableDatabase>  {
+    static async deleteValue<Type>(entity: EntityTarget<Type>, object: Type): Promise<RemoveableDatabase> {
         try {
             const entityRepository = connection.getRepository(entity);
             await entityRepository.remove(object);
@@ -90,7 +91,7 @@ export default class Citi {
                 httpStatus: 200,
                 messageFromDelete: Message.VALUE_DELETED_FROM_DATABASE
             };
-        } catch(error){
+        } catch (error) {
             Terminal.show(Message.ERROR_AT_DELETE_FROM_DATABASE);
             return {
                 httpStatus: 400,
@@ -110,7 +111,7 @@ export default class Citi {
                 }
             })
 
-            if(valueFound.length === 0) throw new Error("Não foi encontrado");
+            if (valueFound.length === 0) throw new Error("Não foi encontrado");
 
             await entityRepository.update(id, object);
             Terminal.show(Message.VALUE_WAS_UPDATED);
@@ -118,7 +119,7 @@ export default class Citi {
                 httpStatus: 200,
                 messageFromUpdate: Message.VALUE_WAS_UPDATED
             };
-        } catch(error){
+        } catch (error) {
             Terminal.show(Message.ERROR_AT_UPDATE_FROM_DATABASE);
             return {
                 httpStatus: 400,

@@ -11,7 +11,7 @@ const bannerController = new BannerController();
 const timerController = new TimerController();
 const imagesController = new ImagesController();
 const carouselController = new CarouselController();
- 
+
 routes.post('/images', imagesController.create);
 routes.get('/images', imagesController.get);
 routes.delete('/images/:id', imagesController.delete);
