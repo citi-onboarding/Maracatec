@@ -4,3 +4,10 @@ node_modules/
 build/
 tmp/
 temp/
+
+yarn.lock
+yarn.error
+package-lock.json
+.env
+.yarn
+.cache
