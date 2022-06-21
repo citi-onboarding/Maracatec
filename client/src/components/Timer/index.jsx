@@ -59,7 +59,7 @@ export const Timer = () => {
     const [date, setDate] = useState([]);
 
     const getInfos = async () => {
-        const response = await axios.get('http://localhost:3001/timer/');
+        const response = await axios.get('https://maracatec.herokuapp.com/timer/');
         setDate(response.data);
     }
 

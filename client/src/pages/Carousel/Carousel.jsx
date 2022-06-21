@@ -50,7 +50,7 @@ export default function Carousel() {
   const [infos, setInfos] = useState([])
 
   const getInfos = async () => {
-    const response = await axios.get('http://localhost:3001/Carousel/')
+    const response = await axios.get('https://maracatec.herokuapp.com/Carousel/')
     setInfos(response.data)
   }
 
