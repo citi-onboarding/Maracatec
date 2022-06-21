@@ -12,7 +12,7 @@ export const ChatBox = () => {
     async function sendEmail() {
         const data = { name, email, message };
         try {
-            const response = await axios.post('http://localhost:3001/email', data);
+            const response = await axios.post('https://maracatec.herokuapp.com/email', data);
             alert(`E-mail enviado com sucesso!`);
         } catch (error) {
             console.log(error);
@@ -20,7 +20,7 @@ export const ChatBox = () => {
     }
 
     return (
-        <ChatBoxComponent   id="ContactLink">
+        <ChatBoxComponent id="ContactLink">
             <div className="content">
                 <h1>Manda o <span className='pink'> papo!</span></h1>
                 <form>
